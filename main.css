@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:200,300,400,500,600,700,900);
+
+#h1Name{
+
+	font-size:70px;
+	text-align:center;
+	text-transform:uppercase;
+	background-color: white;
+}
+
+html,body{
+	height:95vh;
+
+}
+
+h1{
+	margin:0px;
+	font-size:50px;
+	text-align: center;
+	color:rgb(255,160,122);
+
+}
+
+#spanColor{
+	color:#FFA07A;
+}
+
+
+body{	
+	font-family:'Oxygen', Helvetica, sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	background:rgb(255,160,122);
+	color:black;
+	align-items: center;
+	/*background:rgb(255,160,122);*/
+}
+
+p{
+	color:black;
+	font-size:30px;
+	font-weight: bold;
+}
+#introimg{
+	object-fit: cover;
+	align-self: center;
+  	border-radius: 50%;
+  	width: 300px;
+  	height: 300px;
+}
+
+
+ul{
+	text-align: left;
+	margin-right: 6%;
+}
+
+li{
+	padding-top: 0.5vh;
+	display:inline-block;
+	margin-left: 70px;
+	position:relative;
+
+}
+
+ul>li>a{
+	color:#444;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-weight:bold;
+	font-size:20px; 
+
+}
+.button.active{
+	background:red;
+	color:white;
+}
+
+a::before{
+	transition: all ease-in-out 250ms;
+	content:"";
+	display:block;
+	height:4px;
+	width:100%;
+	background-color: #444;
+	position:absolute;
+	top:0;
+	width:0%;
+
+}
+
+a:hover::before{
+	width:100%;
+}
+
+a:hover{
+	display: block;
+	height:6%;
+	color:#000;
+}
+
+
+.tabPanel{
+	width:88%;
+	height:80vh;
+	background:rgb(255,248,220);
+	padding:40px;
+	text-align:center;
+	margin:auto;
+	color:white;
+	display:none;
+}
+
+
+footer{
+	margin-top: 10px;
+	text-align:center;
+}
