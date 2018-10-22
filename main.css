@@ -119,6 +119,7 @@ li{
 	margin:auto;
 	color:white;
 	display:none;
+	align-items:baseline;
 }
 
 
@@ -131,18 +132,25 @@ footer{
 
 /**************************** About Me **************************/
 
-.tabPanel>ul>li>p{
-	font-size:20px;
-}
-
-.tabPanel>table td{
+#JobNotice{
+	font-size:2.5vh;
 	text-align: left;
-	font-size:20px;
-	padding-right: 100px;
-	color:black;
+	margin-top: 2vh;
+	filter:brightness(50%);
+}
+.AboutMe{
+	font-size:2.5vh;
+	font-family: 'PT Sans', Helvetica, sans-serif;
+	color:#555;
+	box-sizing: border-box;
+	text-align: left;
+	margin-bottom: 1vh;
+	margin-top:0.5vh;
+	font-weight: 300;
 }
 
-.tabPanel>table{
-	float:right;
+#ProfPic{
+	float:left;
+	align-items: center;
+	margin:5vh;
 }
-
