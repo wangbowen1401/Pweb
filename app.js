@@ -3,10 +3,10 @@ var counter = 0;
 var elem = document.getElementById("changeText");
 
 function change() {
-  $(elem).fadeTo(1200,0,function(){
+  $(elem).fadeTo(1500,0,function(){
   	this.innerHTML=text[counter];
   	counter = ++counter % text.length;
-  	$(this).fadeTo(1200,1,change);
+  	$(this).fadeTo(1500,1,change);
   })
 }
 
@@ -24,4 +24,4 @@ function showPanel(panelIndex,colorCode) {
     tabPanels[panelIndex].style.display="block";
 }
 
-showPanel(0);
+showPanel(1);
