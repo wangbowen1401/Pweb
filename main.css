@@ -130,6 +130,7 @@ li{
 footer{
 	margin-top: 15px;
 	text-align:center;
+	float:center;
 }
 
 
@@ -139,7 +140,7 @@ footer{
 #JobNotice{
 	font-size:2.5vh;
 	text-align: left;
-	margin-top: 15vh;
+	margin-top: 5%;
 	filter:brightness(80%);
 	color:rgb(255,160,122);
 }
@@ -173,4 +174,5 @@ footer{
 .textBox{
 	margin-right: 5vh;
 	align-items: left;
+	float:center;
 }

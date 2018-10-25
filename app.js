@@ -1,6 +1,7 @@
 var text = ["Chemical Engineer", "Programmer"];
 var counter = 0;
 var elem = document.getElementById("changeText");
+var isVisible = document.getElementById("")
 
 function change() {
   $(elem).fadeTo(1500,0,function(){
@@ -17,11 +18,15 @@ change()
 var tabs = document.querySelectorAll(".tabContainer.HoverButton a");
 var tabPanels=document.querySelectorAll(".tabContainer  .tabPanel");
 
-function showPanel(panelIndex,colorCode) {
+function blockPanels() {
     tabPanels.forEach(function(node){
         node.style.display="none";
     });
-    tabPanels[panelIndex].style.display="block";
 }
 
-showPanel(1);
+function showPanel(panelIndex) {
+	blockPanels();
+    $(tabPanels[panelIndex]).fadeIn(300);
+}
+blockPanels();
+tabPanels[0].style.display="block";
