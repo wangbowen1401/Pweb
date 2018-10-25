@@ -3,7 +3,6 @@
 
 /************************************Home Page*****************/
 #h1Name{
-
 	font-size:70px;
 	text-align:center;
 	text-transform:uppercase;
@@ -12,27 +11,20 @@
 
 html,body{
 	height:100vh;
-
 }
 
 h1{
 	margin:0px;
 	font-size:50px;
 	text-align: center;
-	color:rgb(255,160,122);
-
+	color:rgb(255,160,122)!important;
 }
-
-#spanColor{
-	color:#FFA07A;
-}
-
 
 body{	
 	font-family:'Oxygen', Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 1em;
-	background:rgb(255,160,122);
+	background:rgb(255,160,122)!important;
 	color:black;
 	align-items: center;
 	/*background:rgb(255,160,122);*/
@@ -43,6 +35,7 @@ p{
 	font-size:30px;
 	font-weight: bold;
 }
+
 #introimg{
 	object-fit: cover;
 	align-self: center;
@@ -71,6 +64,10 @@ li{
 	margin-left: 70px;
 	position:relative;
 	padding-bottom: 1vh;
+
+}
+
+.HoverButton{
 
 }
 
@@ -109,10 +106,17 @@ li{
 	color:#000;
 }
 
+.HoverButton>ul>li>a:focus{
+	display: block;
+	height:6%;
+	color:#000;
+	cursor:pointer;
+}
+
 
 .tabPanel{
-	width:88%;
-	height:87vh;
+	width:90%;
+	height:85vh;
 	background:rgb(255,248,220);
 	padding:40px;
 	text-align:center;
@@ -124,7 +128,7 @@ li{
 
 
 footer{
-	margin-top: 10px;
+	margin-top: 15px;
 	text-align:center;
 }
 
@@ -135,8 +139,9 @@ footer{
 #JobNotice{
 	font-size:2.5vh;
 	text-align: left;
-	margin-top: 2vh;
-	filter:brightness(50%);
+	margin-top: 15vh;
+	filter:brightness(80%);
+	color:rgb(255,160,122);
 }
 .AboutMe{
 	font-size:2.5vh;
@@ -151,6 +156,21 @@ footer{
 
 #ProfPic{
 	float:left;
+	height:60vh;
+	width:45vh;
 	align-items: center;
-	margin:5vh;
+	margin:3.5vh;
+	margin-right: 7.5vh;
+}
+
+.buttonContainer{
+	float:right;
+	padding: 0.5vh;
+	float:left;
+	text-decoration: none;
+}
+
+.textBox{
+	margin-right: 5vh;
+	align-items: left;
 }
