@@ -25,8 +25,16 @@ function blockPanels() {
 }
 
 function showPanel(panelIndex) {
-	blockPanels();
-    $(tabPanels[panelIndex]).fadeIn(300);
+	for(i=0;i<2;i++){
+		if(tabPanels[i].display!="none"){
+			$(tabPanels[i]).fadeOut(300,function(){
+				$(tabPanels[panelIndex]).fadeIn(450);
+			});
+		}
+	}
+
 }
+
 blockPanels();
 tabPanels[0].style.display="block";
+$(tabPanels[0]).fadeIn(300);

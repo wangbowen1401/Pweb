@@ -10,7 +10,9 @@
 }
 
 html,body{
-	height:100vh;
+	min-height:100%;
+	height:100%;
+	background:rgb(255,160,122)!important;
 }
 
 h1{
@@ -24,7 +26,6 @@ body{
 	font-family:'Oxygen', Helvetica, sans-serif;
 	font-weight: 400;
 	font-size: 1em;
-	background:rgb(255,160,122)!important;
 	color:black;
 	align-items: center;
 	/*background:rgb(255,160,122);*/
@@ -116,7 +117,7 @@ li{
 
 .tabPanel{
 	width:90%;
-	height:85vh;
+	min-height:85vh;
 	background:rgb(255,248,220);
 	padding:40px;
 	text-align:center;
@@ -175,4 +176,5 @@ footer{
 	margin-right: 5vh;
 	align-items: left;
 	float:center;
+	margin-bottom: 5vh;
 }
