@@ -69,22 +69,15 @@ li{
 }
 
 .HoverButton{
-
-}
-
-.HoverButton>ul>li>a{
 	color:#444;
 	text-decoration: none;
 	font-variant: small-caps;
 	font-weight:bold;
 	font-size:20px; 
 }
-.button.active{
-	background:red;
-	color:white;
-}
 
-.HoverButton>ul>li>a::before{
+
+.HoverButton::before{
 	transition: all ease-in-out 250ms;
 	content:"";
 	display:block;
@@ -94,28 +87,27 @@ li{
 	position:absolute;
 	top:2px;
 	width:0%;
-
 }
 
-.HoverButton>ul>li>a:hover::before{
+.HoverButton:hover::before{
 	width:100%;
 }
 
-.HoverButton>ul>li>a:hover{
+.HoverButton:hover{
 	display: block;
-	height:6%;
+	height:2%;
 	color:#000;
+	text-decoration: none;
 }
 
-.HoverButton>ul>li>a:focus{
-	display: block;
-	height:6%;
+.HoverButton:focus{
+	height:2%;
 	color:#000;
 	cursor:pointer;
 }
 
 
-.tabPanel{
+#HomePanel,#AboutMePanel{
 	width:90%;
 	min-height:85vh;
 	background:rgb(255,248,220);

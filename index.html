@@ -11,16 +11,16 @@
 </head>
 <body>
 	<div class="tabContainer">
-		<div class="HoverButton">
+		<div>
 			<ul>
-				<li><a href="#" onclick="showPanel(0)">Home</a></li>
-				<li><a href="#" onclick="showPanel(1)">About Me</a></li>
-				<li><a href="#" onclick="showPanel(2)">Resume</a></li>
-				<li><a href="#" onclick="showPanel(3)">Contact</a></li>
+				<li><a href="#"  class="HoverButton" tab="Home">Home</a></li>
+				<li><a href="#"  class="HoverButton" tab="AboutMe">About Me</a></li>
+				<li><a href="#"  class="HoverButton" tab="Resume">Resume</a></li>
+				<li><a href="#"  class="HoverButton" tab="Contact">Contact</a></li>
 			</ul>
 		</div>
 
-		<div class="tabPanel">
+		<div id="HomePanel">
 			<img id="introimg"src="Pic/IMG_2287.jpg" alt="Personal Picture" >
 			<h1>Hello!</h1>
 			<h1>My name is Bowen</span></h1>
@@ -28,7 +28,7 @@
 			<p id="description">Welcome to my personal website!</p>
 		</div>
 
-		<div class="tabPanel">
+		<div id="AboutMePanel">
 			<img id="ProfPic" src="Pic/IMG_4361.jpg" alt="Professional Pic2">
 			
 			<div class="textBox">
