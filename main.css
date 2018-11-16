@@ -18,7 +18,7 @@ html,body{
 }
 
 h1{
-	margin:0px;
+	margin:0px !important;
 	font-size:50px;
 	text-align: center;
 	color:rgb(255,160,122)!important;
@@ -110,7 +110,7 @@ li{
 }
 
 
-#HomePanel,#AboutMePanel{
+#HomePanel,#AboutMePanel,#ExperiencePanel{
 	width:90%;
 	min-height:85vh;
 	background:rgb(255,248,220);
@@ -178,13 +178,21 @@ footer{
 }
 
 /*/////////////////////////Fun Facts Stuff//////////////////////*/
+
+
+/* Images */
 .FunFactImage{
 	max-height: 100%;
-	max-width: 30%;
+	max-width: 15%;
 	margin-right: 2%;
+	align-content: center;
 }
+
 div.FunFactBox.row{
 	min-height: 30vh;
+	padding-left: 3.5vh;
+	margin-right: 3.5vh;
+	margin-bottom: 0.2%;
 }
 
 .hoverText{
@@ -193,9 +201,9 @@ div.FunFactBox.row{
 	color:white !important;
 }
 
-div.col-lg-3.col-md-4.col-sm-6.col-xs-12{
+div.col-lg-3{
 	flex:33%;
-	max-width: 33%;
+	max-width: 25%;
 }
 
 .FunFactBox.row{
