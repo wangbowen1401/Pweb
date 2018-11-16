@@ -18,7 +18,7 @@ change()
 $(document).ready(function(){
 	var panels=["#HomePanel","#AboutMePanel"];
 	console.log("ready!");
-	$("#HomePanel").show();
+	$("#AboutMePanel").show();
 	$(".HoverButton").click(function(){
 		panels.forEach(function(panel){
 			$(panel).fadeOut(300).promise().done();
