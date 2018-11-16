@@ -76,6 +76,7 @@ li{
 	font-variant: small-caps;
 	font-weight:bold;
 	font-size:20px; 
+	margin-left: auto;
 }
 
 
@@ -186,7 +187,7 @@ div.FunFactBox.row{
 	min-height: 30vh;
 }
 
-h1,p.hoverText{
+.hoverText{
 	margin-top: auto;
 	align-content: center;
 	color:white !important;

@@ -16,25 +16,17 @@ change()
 ///////////////////////// Tab Portions//////////////////////
 
 $(document).ready(function(){
+	var current="#HomePanel"
 	var panels=["#HomePanel","#AboutMePanel"];
 	console.log("ready!");
 	$("#AboutMePanel").show();
 	$(".HoverButton").click(function(){
+		current=this.getAttribute('tab');
 		panels.forEach(function(panel){
-			$(panel).fadeOut(300).promise().done();
+			if(panel!=current)
+				$(panel).fadeOut(300).promise().done();
 		});
 		$(this.getAttribute('tab')).delay(100);
 		$(this.getAttribute('tab')).fadeIn(600);
 	});
 });
-
-/*
-if($(this).attr("tab")=="Home"){
-			if($("#AboutMePanel").is(":visible"))
-				$("#AboutMePanel").fadeOut(300,function(){$("#HomePanel").fadeIn(300)});
-		}
-if($(this).attr("tab")=="AboutMe"){
-	if($("#HomePanel").is(":visible"))
-		$("#HomePanel").fadeOut(300,function(){$("#AboutMePanel").fadeIn(300)});
-}
-*/
