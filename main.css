@@ -182,12 +182,24 @@ footer{
 	max-width: 30%;
 	margin-right: 2%;
 }
+div.FunFactBox.row{
+	min-height: 30vh;
+}
 
-.FunFactBox{
-	width:100%;
-	max-width:33%;
+h1,p.hoverText{
+	margin-top: auto;
+	align-content: center;
+	color:white !important;
+}
+
+div.col-lg-3.col-md-4.col-sm-6.col-xs-12{
+	flex:33%;
+	max-width: 33%;
+}
+
+.FunFactBox.row{
+	padding-top: 2vh;
 	text-align: left;
-	display:inline-block;
 }
 .hovereffect {
 	width:100%;
