@@ -2,6 +2,11 @@
 
 
 /************************************Home Page*****************/
+*{
+	line-height: 1.15;
+}
+
+
 #h1Name{
 	font-size:70px;
 	text-align:center;
@@ -110,9 +115,9 @@ li{
 }
 
 
-#HomePanel,#AboutMePanel,#ExperiencePanel{
+#HomePanel,#AboutMePanel,#ResumePanel{
 	width:90%;
-	min-height:85vh;
+	min-height:90vh;
 	background:rgb(255,248,220);
 	padding:2vh;
 	text-align:center;
@@ -289,3 +294,52 @@ div.col-lg-3{
 	-webkit-transform:translatey(0);
 	transform:translatey(0);
 }
+
+
+.ResumeCol{
+	width:33%;
+	text-align: left !important;
+	height: 80vh;
+	float:left;
+}
+
+#ExperiencePanel{
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.ResumeTopic{
+	color:black;
+	text-align: left;
+	font-size:2vh;
+	overflow: hidden;
+	white-space:nonwrap;
+	float:left;
+	font-weight: 500;
+}
+
+.ResumeLocation{
+	font-weight: 500;
+	color:black;
+	text-align: left;
+	font-size:2vh;
+	overflow: hidden;
+	white-space:nonwrap;
+	float:right;
+}	
+
+.description{
+	font-size:2vh;
+	color:black;
+	display:inline-block;
+	text-align: left;
+}
+
+.ResumeSection p{
+	color:gray;
+	font-size: 1.5vh;
+	text-align: left;
+	margin-left: 0px;
+	float:left;
+}
+
