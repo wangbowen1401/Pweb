@@ -175,8 +175,8 @@ footer{
 /*/////////////////////////Fun Facts Stuff//////////////////////*/
 
 #FunFactH1{
-	padding-right: 30%;
-	text-align: center;
+	clear:both;
+	width:100%;
 }
 
 .FunFactImage{
@@ -294,6 +294,9 @@ img.img-responsive{
 
 /*                               Resume Panel             */
 
+.ResumeSection h1{
+	font-size: 5vh;
+}
 
 .ResumeCol{
 	width:33%;
@@ -305,17 +308,19 @@ img.img-responsive{
 .ResumeTopic{
 	color:black;
 	text-align: left;
-	font-size:2vh;
+	font-size:2.5vh;
 	overflow: hidden;
 	float:left;
 	font-weight: 500;
+	font-style: bold;
 }
 
 .ResumeLocation{
 	font-weight: 500;
+	font-style: bold;
 	color:black;
 	text-align: left;
-	font-size:2vh;
+	font-size:2.5vh;
 	overflow: hidden;
 	white-space:nonwrap;
 	float:right;
@@ -326,12 +331,13 @@ img.img-responsive{
 	color:black;
 	display:inline-block;
 	text-align: left;
+	font-weight: 400;
 }
 
 .ResumeSection p{
 	margin-bottom: 0px;
 	color:gray;
-	font-size: 1.5vh;
+	font-size: 2vh;
 	text-align: left;
 	margin-left: 0px;
 	line-height: 1.5;
@@ -341,3 +347,6 @@ img.img-responsive{
 	padding-bottom: 1rem;
 }
 
+.ResumeSection .buttonContainer{
+	float:right;
+}
