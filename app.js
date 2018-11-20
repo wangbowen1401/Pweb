@@ -19,7 +19,7 @@ $(document).ready(function(){
 	var current="#HomePanel"
 	var panels=["#HomePanel","#AboutMePanel","#ResumePanel"];
 	console.log("ready!");
-	$("#AboutMePanel").show();
+	$("#ResumePanel").show();
 	$(".HoverButton").click(function(){
 		current=this.getAttribute('tab');
 		panels.forEach(function(panel){
