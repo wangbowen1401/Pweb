@@ -18,15 +18,28 @@ change()
 $(document).ready(function(){
 	var current="#HomePanel"
 	var panels=["#HomePanel","#AboutMePanel","#ResumePanel"];
-	console.log("ready!");
 	$("#ResumePanel").show();
 	$(".HoverButton").click(function(){
 		current=this.getAttribute('tab');
 		panels.forEach(function(panel){
 			if(panel!=current)
 				$(panel).fadeOut(300).promise().done();
+			if(panel=="#ResumePanel"){
+				console.log("ready");
+				$('.skillbar').each(function(){
+					$(this).find('.skillbar-bar').animate({width:jQuery(this).attr('data-percent')
+					},100);
+				});
+			}
 		});
 		$(this.getAttribute('tab')).delay(100);
 		$(this.getAttribute('tab')).fadeIn(600);
+	});
+});
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
 	});
 });
