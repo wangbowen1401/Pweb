@@ -24,13 +24,6 @@ $(document).ready(function(){
 		panels.forEach(function(panel){
 			if(panel!=current)
 				$(panel).fadeOut(300).promise().done();
-			if(panel=="#ResumePanel"){
-				console.log("ready");
-				$('.skillbar').each(function(){
-					$(this).find('.skillbar-bar').animate({width:jQuery(this).attr('data-percent')
-					},100);
-				});
-			}
 		});
 		$(this.getAttribute('tab')).delay(100);
 		$(this.getAttribute('tab')).fadeIn(600);
