@@ -36,21 +36,32 @@ p{
 }
 
 #introTexts{
+	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
 	margin-top:25%;
 	float:right;
 	text-align: center;
-	margin-right: 10%;
+	margin-right: 5%;
+	line-height: 1;
+	padding-left:1vh;
 }
+
 #introTexts p{
 	color:#de784c;
+	font-size: 3vh;
+}
+
+#introTexts h1{
+	font-family: "Comic Sans MS";
+	padding-bottom: 2px;
+	font-size: 5vh;
 }
 
 #introimg{
-	margin-top:10%;
+	margin-top:5%;
 	object-fit: cover;
 	float:left;
-  	width: 80%;
-  	height:80%;
+  	width: 90%;
+  	height:80vh;
 }
 
 #description{
@@ -114,7 +125,7 @@ li{
 	cursor:pointer;
 }
 
-#HomePanel,#AboutMePanel,#ResumePanel{
+#HomePanel,#AboutMePanel,#ResumePanel,#ContactPanel{
 	width:90%;
 	height:90vh;
 	background:rgb(255,248,220);

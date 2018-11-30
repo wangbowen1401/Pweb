@@ -17,7 +17,7 @@ change()
 
 $(document).ready(function(){
 	var current="#HomePanel"
-	var panels=["#HomePanel","#AboutMePanel","#ResumePanel"];
+	var panels=["#HomePanel","#AboutMePanel","#ResumePanel","#ContactPanel"];
 	$("#HomePanel").show();
 	$(".HoverButton").click(function(){
 		current=this.getAttribute('tab');
