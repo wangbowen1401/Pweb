@@ -13,22 +13,31 @@
 </head>
 <body>
 	<div class="tabContainer">
-		<div>
+		<nav>
 			<ul>
 				<li><a href="#"  class="HoverButton" tab="#HomePanel">Home</a></li>
 				<li><a href="#"  class="HoverButton" tab="#AboutMePanel">About Me</a></li>
 				<li><a href="#"  class="HoverButton" tab="#ResumePanel">Resume</a></li>
-				<li><a href="#"  class="HoverButton" tab="#ContactPanel">Contact</a></li>
+				<li><a href="#"  class="HoverButton" tab="#ResumePanel">Contact</a></li>
 			</ul>
-		</div>
+		</nav>
 
 
 		<div id="HomePanel">
-			<img id="introimg"src="Pic/IMG_2287.jpg" alt="Personal Picture" >
-			<h1>Hello!</h1>
-			<h1>My name is Bowen</span></h1>
-			<p id="changeText">Programmer</p>
-			<p id="description">Welcome to my personal website!</p>
+			<div class="row">
+				<div class="col-sm-7">
+					<div id="introTexts">
+						<h1>Hello! My name is Bowen</h1>
+						<p> I am a </p>
+						<p id="changeText" style="color:black">Programmer</p>
+						<p>Exploring the Tech World</p>
+						<p>Welcome to my personal website!</p>
+					</div>
+				</div>	
+				<div class="col-sm-5">
+					<img id="introimg"src="Pic/IMG_2287.jpg" alt="Personal Picture" >
+				</div>
+			</div>
 		</div>
 
 		<div id="AboutMePanel">
@@ -63,12 +72,6 @@
 						Github Project
 					</a>
 				</div>
-				<div class="buttonContainer">
-					<a class="btn btn-outline-primary" target="_blank" href="https://www.facebook.com/bowen.wang.7">
-						<i class="fa fa-facebook-square"></i>
-						Facebook
-					</a>
-				</div>
 				<br>
 				<br>
 				<h1 id="FunFactH1">Fun Facts</h1>
@@ -77,9 +80,8 @@
    						<div class="hovereffect">
         					<img class="img-responsive" src="Pic/FunFact_1.jpg" alt="">
         					<div class="overlay">
-        						<br>
-        						<br>
            						<h1 class="hoverText">Lewis Coonley Award</h1>
+           						<br>
            						<p class="hoverText">Best Senior Process Design of 2018</p>
         					</div>
     					</div>
@@ -88,7 +90,8 @@
    						<div class="hovereffect">
         					<img class="img-responsive" src="Pic/IMG_3931.jpg" alt="">
         					<div class="overlay">
-								<br>
+        						<br>
+        						<br>
         						<br>
            						<h1 class="hoverText">Board Game Enthusiast</h1>
         					</div>
@@ -149,33 +152,6 @@
 						</div>
 		            </div>
 		            <br>
-		            <!--
-		            <div class="ResumeSection">
-		            	<div class="ResumeTopic">Word Puzzle Generator
-		            	</div>
-		            	<div class="ResumeLocation">Troy, NY | Fall 2017</div>
-		            	<br>
-		            	<p>Course Project</p>
-		            	<div class="description">
-		            		•	Designed and developed a personal website with project references, resume, and self-introduction.
-		            		<br>
-							•	Incorporated interactive navigation bar for accessible traversal between various information panels and fun facts for others to view. 
-						</div>
-		            </div>
-		        	-->
-		            <div class="ResumeSection">
-		            	<div class="ResumeTopic">
-		            		<span>ChemE Car Club </span>
-		            		<br>
-		            		<p>Lab Leader</p>
-		            	</div>
-		            	<div class="description">
-		            		•	Placed 3rd in the Northeastern AIChE Conference out of 12 teams and competed in National Conference 2017.
-		            		<br>
-							•	Shortened car setup procedures by 36.8% and developed secondary containment system for the competition car.
-
-						</div>
-		            </div>
 	            </div>
 	            <div class="col-md -4">
 	            	<div class="ResumeSection">
